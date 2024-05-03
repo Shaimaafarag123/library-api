@@ -6,7 +6,7 @@ exports.getBooks = async (req, res) => {
         const books = await Book.find();
         res.json(books);
     } catch (err) {
-        res.status(500).json({ message: err.message });
+        res.status(500). json({ message: err.message });
     }
 }
 
